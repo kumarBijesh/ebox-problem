@@ -1,0 +1,63 @@
+Wrapper Class – Integer II
+
+This program is to illustrate the parseInt() method defined in the Integer Wrapper class.
+
+Write a program that accepts 3 String values as input and invokes some of the methods defined in the Integer Wrapper class.
+
+Refer sample input and output. All functions should be performed using the methods defined in the Integer class.
+
+Input and Output Format:
+
+Refer sample input and output for formatting specifications.
+
+All text in bold corresponds to input and the rest corresponds to output.
+
+Sample Input and Output :
+
+Enter the binary number
+
+111
+
+Enter the octal number
+
+11
+
+Enter the hexadecimal number
+
+1F
+
+The integer value of the binary number 111 is 7
+
+The integer value of the octal number 11 is 9
+
+The integer value of the hexadecimal number 1F is 31
+
+
+
+
+
+
+
+
+
+
+  import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scanner =new Scanner(System.in);
+	System.out.print(" Enter the binary number\n");
+    String binaryString = scanner.nextLine();
+	System.out.print("Enter the octal number\n");
+	String octalString = scanner.nextLine();
+	System.out.print("Enter the hexadecimal number\n");
+	String hexString = scanner.nextLine();
+    int binaryInt=Integer.parseInt(binaryString,  2);
+    int octalInt =Integer.parseInt(octalString,  8);
+    int hexInt =Integer.parseInt(hexString,  16);
+	System.out.println("The integer value of the binary number "+ binaryString +" is "+binaryInt);
+	System.out.println("The integer value of the octal number "+ octalString + " is "+octalInt);
+	System.out.println("The integer value of the hexadecimal number " +hexString + " is "+hexInt);
+
+}
+}
