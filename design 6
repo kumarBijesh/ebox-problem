@@ -1,0 +1,70 @@
+
+This program is to illustrate Integer Wrapper class.
+
+ 
+
+Write a program that accepts a “Integer” class type value as input and invokes some of the methods defined in the Integer Wrapper class.
+
+ 
+
+Refer sample input and output. All functions should be performed using the methods defined in the Integer class.
+
+ 
+
+Input and Output Format:
+
+ 
+
+Refer sample input and output for formatting specifications.
+
+All text in bold corresponds to input and the rest corresponds to output.
+
+ 
+
+Sample Input and Output :
+
+ 
+
+Enter an integer
+
+540
+
+The binary equivalent of 540 is 1000011100
+
+The hexadecimal equivalent of 540 is 21c
+
+The octal equivalent of 540 is 1034
+
+Byte value of 540 is 28
+
+Short value of 540 is 540
+
+Long value of 540 is 540
+
+Float value of 540 is 540.0
+
+Double value of 540 is 540.0
+
+
+
+
+
+  import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter an integer");
+		Integer number =scanner.nextInt();
+		System.out.println("The binary equivalent of "+ number + " is " + Integer.toBinaryString(number));
+		System.out.println("The hexadecimal equivalent of "+number+ " is "+Integer.toHexString(number));
+		System.out.println("The octal equivalent of "+ number + " is "+Integer.toOctalString(number));
+		System.out.println("Byte value of "+ number + " is " +number .byteValue());
+  System.out.println("Short value of "+ number + " is " +number.shortValue());
+  System.out.println("Long value of "+number +" is "+number.longValue());
+System.out.println("Float value of "+ number +" is "+number.floatValue());
+System.out.println("Double value of "+number +" is "+number.doubleValue());
+
+	}
+
+}
