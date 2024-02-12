@@ -1,0 +1,65 @@
+         Mr. Gowtham is a football player. While he playing he thought of finding an area of the circle which is marked white in the center of the ground.
+
+ 
+
+Can u write a program to find the area of the circle.
+
+ 
+
+Create a class called Circle. Create a static method name called calArea with one float arguments and return type of float.
+
+ 
+
+In the main method call calArea function from Circle class without creating object for class Circle..
+
+Note: Please have pi values as 22/7.
+
+ 
+
+Input and Output Format:
+
+Refer sample input and output for formatting specifications.
+
+ 
+
+Sample Input and Output:
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+ 
+
+Sample Input and Output 1:
+
+Enter the radius of circle :
+
+5
+
+The area of circle is 78.57.
+
+ 
+
+Sample Input and Output 2:
+
+Enter the radius of circle :
+
+10
+
+The area of circle is 314.29. 
+
+
+
+           import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+System.out.print("Enter the radius of circle :\n");
+
+float radius = sc.nextFloat(); // Use float for radius
+float pi = 22.0f / 7.0f; // Approximate pi value
+
+ float circleArea = pi * radius * radius;
+
+System.out.printf("The area of circle is %.2f.\n", circleArea);
+  }
+  }
